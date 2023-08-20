@@ -1,0 +1,6 @@
+﻿  Application.cpp
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(217,3): error C2065: 'ibo': undeclared identifier
+  Renderer.h
+  VertexBuffer.cpp
+D:\OpenGL\MyOpenGL\MyOpenGL\src\VertexBuffer.cpp(9,2): error C2198: 'PFNGLBUFFERDATAPROC': too few arguments for call
+  Generating Code...
