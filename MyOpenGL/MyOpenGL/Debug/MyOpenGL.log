@@ -1,6 +1,16 @@
 ﻿  Application.cpp
-Debug\Renderer.obj : warning LNK4042: object specified more than once; extras ignored
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\OpenGL\MyOpenGL\Debug\vc120.pdb'; linking object as if no debug info
-  MyOpenGL.vcxproj -> D:\OpenGL\MyOpenGL\Debug\MyOpenGL.exe
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(174,9): error C2065: 'VertexArray': undeclared identifier
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(174,21): error C2146: syntax error: missing ';' before identifier 'va'
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(174,21): error C2065: 'va': undeclared identifier
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(176,12): error C2039: 'AddBuffer': is not a member of 'VertexBuffer'
+D:\OpenGL\MyOpenGL\MyOpenGL\src\VertexBuffer.h(3): message : see declaration of 'VertexBuffer'
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(178,9): error C2065: 'BufferLayout': undeclared identifier
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(178,22): error C2146: syntax error: missing ';' before identifier 'layout'
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(178,22): error C2065: 'layout': undeclared identifier
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(179,9): error C2065: 'layout': undeclared identifier
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(179,21): error C2062: type 'float' unexpected
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(180,9): error C2065: 'va': undeclared identifier
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(180,22): error C2065: 'layout': undeclared identifier
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(184,22): error C2374: 'vb': redefinition; multiple initialization
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(175): message : see declaration of 'vb'
+D:\OpenGL\MyOpenGL\MyOpenGL\src\Application.cpp(229,13): error C2065: 'va': undeclared identifier

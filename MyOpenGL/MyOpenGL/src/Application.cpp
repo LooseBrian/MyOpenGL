@@ -158,7 +158,7 @@ int main(void)
             -0.5f,  0.5f, //3
 
         };
-
+         
         unsigned int indices[] = {
 
             0, 1, 2,
@@ -170,6 +170,16 @@ int main(void)
         unsigned int vao;
         GLCall(glGenVertexArrays(1, &vao));
         GLCall(glBindVertexArray(vao));
+
+        VertexArray va;
+        VertexBuffer vb(positions, 4 * 2 * sizeof(float));
+        vb.AddBuffer(vb);
+
+        BufferLayout layout;
+        layout.Push<float>(3);
+        va.AddLayout(layout);
+    
+
 
         VertexBuffer vb(positions, 4 * 2 * sizeof(float));
 
@@ -216,6 +226,7 @@ int main(void)
             //GLCall(glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0));
 
             GLCall(glBindVertexArray(vao));
+            va.Bind();
             ib.Bind();
 
 
